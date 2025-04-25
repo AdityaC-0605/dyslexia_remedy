@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Practice - Dyslexia Support</title>
+    <link href="https://fonts.googleapis.com/css2?family=OpenDyslexic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reading Practice</h1>
+        
+        <div class="controls">
+            <button id="startReading" class="btn">Start Reading Aloud</button>
+            <button id="stopReading" class="btn" disabled>Stop Reading</button>
+            
+            <div class="font-controls">
+                <button id="decreaseFont" class="btn">Smaller Font</button>
+                <button id="increaseFont" class="btn">Larger Font</button>
+            </div>
+            
+            <div class="background-controls">
+                <button id="whiteBg" class="btn">White Background</button>
+                <button id="grayBg" class="btn">Gray Background</button>
+                <button id="beigeBg" class="btn">Beige Background</button>
+            </div>
+        </div>
+
+        <div id="readingArea" class="reading-area">
+            <div id="textContainer" class="text-container">
+                <!-- Text will be inserted here by JavaScript -->
+            </div>
+        </div>
+
+        <div class="feedback">
+            <p id="statusMessage">Click "Start Reading Aloud" to begin.</p>
+            <p id="wordCount">Words read: 0/0</p>
+        </div>
+
+        <div id="remedySuggestions" class="remedy-suggestions">
+            <!-- Remedy suggestions will be inserted here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
